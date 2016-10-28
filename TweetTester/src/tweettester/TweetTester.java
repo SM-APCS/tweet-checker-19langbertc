@@ -21,14 +21,20 @@ public class TweetTester {
     {
         Scanner scan = new Scanner (System.in);
         String tweet;
+        // Define an int to keep track of the number of character
         int chars = 0;
+        // Use the nextLine method to define a string
         String lines = scan.nextLine();
         
+        // Set a for loop to run lines.length() times
         for(int i = 0; i < lines.length(); i++)
         {
+            // Increase the char count every time the for loop runs to
+            // keep track of the number of characters in the lines string
             chars++;
         }
         
+        // Print out the total numbers of characters of the tweet
         System.out.println(chars);
     }
 }
